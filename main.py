@@ -4,7 +4,7 @@ import unittest
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.by import By
 
-# BEFORE RUNNING: MUST HAVE A CHROMEDRIVER.EXE FOR THIS CODE TO WORK
+# BEFORE RUNNING: MUST HAVE A CHROMEDRIVER.EXE 
 
 global f_path
 f_path = "file:///C:/Users/angel/Downloads/AutomationChallenge-2020/index.html"
@@ -16,7 +16,6 @@ def method_6(table, row, col):
     rows = table.find_elements_by_tag_name("tr")
 
     return rows[row].find_elements_by_tag_name("td")[col].text
-    # print(rows[row].find_elements_by_tag_name("td")[col].text)
 
 
 # inherit unit test module
